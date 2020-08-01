@@ -5,10 +5,10 @@
         id="id"
         v-model="search"
         name="name"
-        label="label"
+        label="search"
       />
-      <v-btn color="success" @click="test">
-        text
+      <v-btn color="success" @click="search">
+        Search
       </v-btn>
     </v-row>
     <v-row>
@@ -44,7 +44,7 @@
 export default {
   data () {
     return {
-      search: 'prensa hidraulica 12 toneladas',
+      search: '',
       items: [],
       loading_amazon: false,
       headers: [
@@ -69,7 +69,7 @@ export default {
   },
 
   methods: {
-    test () {
+    search () {
       const self = this
       self.loading_amazon = true
       this.$api.AmazonSearch.get({ params: { search: this.search } })
