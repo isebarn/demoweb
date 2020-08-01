@@ -7,7 +7,7 @@
         name="name"
         label="search"
       />
-      <v-btn color="success" @click="search">
+      <v-btn color="success" @click="search_get">
         Search
       </v-btn>
     </v-row>
@@ -69,7 +69,7 @@ export default {
   },
 
   methods: {
-    search () {
+    search_get () {
       const self = this
       self.loading_amazon = true
       this.$api.AmazonSearch.get({ params: { search: this.search } })
