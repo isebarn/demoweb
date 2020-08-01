@@ -49,7 +49,7 @@ export default {
           to: '/'
         }
       ],
-      title: 'Title'
+      title: 'Menu'
     }
   }
 }

@@ -1,0 +1,7 @@
+Data:
+  - method: root
+    get: /
+
+AmazonSearch:
+  - method: get
+    get: /amazonsearch
