@@ -71,6 +71,7 @@ export default {
   methods: {
     test () {
       const self = this
+      self.loading_amazon = true
       this.$api.AmazonSearch.get({ params: { search: this.search } })
         .then(function (response) {
           self.items.push(...response.data)
