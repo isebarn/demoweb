@@ -5,3 +5,7 @@ Data:
 AmazonSearch:
   - method: get
     get: /amazonsearch
+
+ZillowSearch:
+  - method: get
+    get: /zillow_zip_search
