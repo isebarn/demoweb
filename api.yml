@@ -9,3 +9,11 @@ AmazonSearch:
 ZillowSearch:
   - method: get
     get: /zillow_zip_search
+
+DisonSearch:
+  - method: get
+    get: /dison_books
+  - method: ebookcategories
+    get: /dison_ebookcategories
+
+
