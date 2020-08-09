@@ -4,7 +4,7 @@
       <v-combobox
         v-model="ebookcategory"
         :items="ebookcategories"
-        label="Sub sub category"
+        label="EBook Category"
         item-text="Value"
         item-value="Id"
         @change="chooseebookcategory"
