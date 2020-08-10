@@ -10,6 +10,10 @@ ZillowSearch:
   - method: get
     get: /zillow_zip_search
 
+RightMove:
+  - method: get
+    get: /rightmove
+
 DisonSearch:
   - method: get
     get: /dison_books
