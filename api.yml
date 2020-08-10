@@ -16,4 +16,6 @@ DisonSearch:
   - method: ebookcategories
     get: /dison_ebookcategories
 
-
+Turkey:
+  - method: get
+    get: /excelfile
