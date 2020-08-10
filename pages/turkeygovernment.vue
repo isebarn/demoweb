@@ -50,9 +50,9 @@ export default {
     search_get () {
       const self = this
       self.loading = true
-      this.$api.Turkey.get({ params: { start: this.start, end: this.end } })
+      this.$api.Turkey.generate({ params: { start: this.start, end: this.end } })
         .then(function (response) {
-          window.open('http://127.0.0.1:5000/excelfile')
+          window.open('https://demoapi.isebarn.com/get_excel')
         })
         .catch(function (error) {
           console.log(error)
